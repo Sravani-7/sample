@@ -8,9 +8,9 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh 'docker images ls'
-                sh 'docker build -t madhavi/node-web-app .'
-                sh 'docker images ls'
+                sh 'docker images'
+                sh 'docker build -t kmadhavi447/node-web-app .'
+                sh 'docker ps'
             }
         }
         stage('push docker image') {
