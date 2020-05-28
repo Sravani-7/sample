@@ -10,7 +10,8 @@ pipeline {
             steps {
                 sh 'docker images'
                 sh 'docker build -t kmadhavi447/node-web-app .'
-                sh 'docker ps'
+                sh 'docker images'
+                
             }
         }
         stage('push docker image') {
