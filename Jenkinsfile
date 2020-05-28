@@ -23,5 +23,10 @@ pipeline {
                 sh 'docker push kmadhavi447/node-web-app'
             }
         }
+        stage('start App test') {
+            steps {
+                sh 'docker run -p 9090:8000 kmadhavi447/node-web-app'
+            }
+        }
     }
 }
