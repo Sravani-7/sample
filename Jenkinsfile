@@ -20,7 +20,7 @@ pipeline {
                     sh "docker login -u kmadhavi447 -p ${dockerhubPwd}"
                 }
                 sh 'docker tag kmadhavi447/node-web-app kmadhavi447/node-web-app'
-                sh 'docker push kmadhavi447/node-web-app:1'
+                sh 'docker push kmadhavi447/node-web-app'
             }
         }
     }
