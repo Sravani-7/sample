@@ -25,7 +25,7 @@ pipeline {
         }
         stage('start App test') {
             steps {
-                sh 'docker run -p 9090:8000 kmadhavi447/node-web-app'
+                sh 'docker run -p 7070:8000 kmadhavi447/node-web-app'
             }
         }
     }
